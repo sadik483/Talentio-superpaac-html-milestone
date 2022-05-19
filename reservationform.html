@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation</title>
+    <style>
+        #nav{
+            background-color:blue;
+            overflow : hidden;
+        }
+        #nav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+
+        #nav a:hover {
+                background-color: #ddd;
+                color: black;
+        }
+
+
+        #nav a.active {
+                background-color: #04AA6D;
+                color: white;
+        }
+        body{
+            background-color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <th>
+            <img src="Guntur-designstyle-colors-m.png" alt="logo" width="50%" height="30%" id="im"></th> 
+            <th><h1 style="color: blue;">Guntur</h1>
+            </th>
+        </table>
+    </div>
+    <div class="container-fluid" id="nav">
+        <a href="12.html">HOME</a>
+        <a href="heritage.html">Heritage</a>
+        <a href="reservationform.html">Hotel Booking</a>
+        <a href="sample.html">Galary</a>
+    </div>
+    <form>
+        <h1>Hotel Reservation</h1><br>
+        <label>Full Name :</label><input type="text" size="20" placeholder="Enter your Full name" required>
+        <br><br>
+        <label>Phone :</label><input type="tel" placeholder="Enter your mobile number" required>
+        <br><br>
+        <label>Email :</label><input type="email" placeholder="Enter you mail id" required><br><br>
+        <label>Arrival Date :</label><input type="date" required><br><br>
+        <label>Departure date :</label><input type="date" required><br><br>
+        <label>Number of adults :</label><input type="number" min="1" max="10" required><br><br>
+        <label>Number of children :</label><input type="number" max="5"><br><br>
+        <label>Questions/comments :</label> 
+        <br><textarea cols="80" rows="5" value="address">  
+        </textarea><br><br>
+        <input type="submit" >
+        <input type="reset">
+    </form>
+</body>
+</html>
